@@ -10,15 +10,13 @@ function action(){
   return GU;
 }
 
-let matches = 0;
-
+let counter = 0;
 function action(oppornent){
-  matches = matches + 1;
-  const remainder = matches % 2;
-  const isEven = remainder == 0;
-  console.log(`${matches} % 2 = ${remainder} : ${isEven}`);
+  counter = counter + 1;
+  const isEven = counter % 3 == 0;
+  let myAction = GU;
   if(isEven){
-    return GU;
+    myAction = CHOKI;
   }
-  return PA;
+  return myAction;
 }

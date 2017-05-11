@@ -6,17 +6,22 @@ const GU = 0;
 const CHOKI = 1;
 const PA = 2;
 
+let matches = 0;
+
 function action(){
   return GU;
 }
-
-let counter = 0;
-function action(oppornent){
-  counter = counter + 1;
-  const isEven = counter % 3 == 0;
-  let myAction = GU;
+function actionAgainstOmoteUra2(){
+  matches = matches + 1;
+  const isEven = matches % 3 == 0;
+  let result = GU;
   if(isEven){
-    myAction = CHOKI;
+    result = CHOKI;
   }
-  return myAction;
+  return result;
+}
+
+function action(oppornent){
+let result = actionAgainstOmoteUra2();
+return result;
 }

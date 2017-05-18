@@ -13,10 +13,10 @@ function action(){
 }
 function actionAgainstOmoteUra2(){
   matches = matches + 1;
-  const isEven = matches % 3 == 0;
-  let result = GU;
+  const isEven = matches % 2 == 0;
+  let result = PA;
   if(isEven){
-    result = CHOKI;
+    result = GU;
   }
   return result;
 }

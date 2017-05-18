@@ -13,11 +13,7 @@ function action(){
 }
 function actionAgainstOmoteUra2(){
   matches = matches + 1;
-  const isEven = matches % 2 == 0;
-  let result = PA;
-  if(isEven){
-    result = GU;
-  }
+  let result = GU;
   return result;
 }
 
